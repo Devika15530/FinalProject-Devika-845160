@@ -1,0 +1,41 @@
+
+
+
+
+
+<div class="image">
+    <div class=" container w-100">
+        <ul class="nav  justify-content-center">
+            <li class="nav-item">
+                <a href="#" class="navbar-brand ">
+                    <img src="/assets/transparentimage.jpg" style=" border-radius: 50% ; opacity: 1.0 ;border-style: double; border-color: black; " width="100" height="100" alt="logo" >
+                </a>
+            </li>
+            <li class="nav-item">
+              <p class="display-3 text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(12, 12, 12) ; " >Emart</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="row clearfix ">
+    <div class="side-nav col-lg-2 col-md-2 col-sm-1 d-none d-md-block border-right border-light bg-dark " id="sideNavbar" style="min-height: 80vh;">
+      <a routerLink="home" class="nav-link text-light"><i class="fa fa-home text-light" aria-hidden="true">&nbsp; Home</i></a>
+      <a routerLink="add-category" class="nav-link text-light"><i class="fa fa-shopping-cart text-light" aria-hidden="true">&nbsp;AddCategory</i></a>
+      <a routerLink="add-sub-category" class="nav-link text-light"><i class="fa fa-list text-light" aria-hidden="true">&nbsp;Add SubCategory </i></a>
+      <a routerLink="viewcategories" ><i class="fa fa-mobile text-light" aria-hidden="true">&nbsp; View category </i></a>
+      <a routerLink="viewsubcategories" class="nav-link text-light"><i class="fa fa-mobile text-light" aria-hidden="true">&nbsp; View Subcategory </i></a>
+
+
+    </div> 
+    <div class="col-md-10 col-lg-10 col-sm-12">
+
+<router-outlet></router-outlet>
+</div>
+
+<footer class="page-footer font-small blue bg-dark text-light">
+    <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
+        <a [routerLink]="['account/home']"  >Emart</a>
+    </div>
+  </footer>
