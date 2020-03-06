@@ -7,8 +7,8 @@
 
 .topnav {
   overflow: hidden;
-  background-color: #0c0a0a;
-  padding: 2px 7px;
+  background-color:white;
+  padding: 2px 5px;
   width: 100%;
 }
 
@@ -16,7 +16,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: rgb(219, 92, 18);
+  color:black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -188,13 +188,16 @@ h4{
 }
 
 #b1{
-  background-image: url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-image: url("src\assets\image\back41.jpg");
  background-size: cover;
- height:650px;
+ height:590px;
  position:relative;
+
 }
 /* .round-shape {
   border-radius: 50%;
   width: 40%;
   height: 90%
 } */
+
+
