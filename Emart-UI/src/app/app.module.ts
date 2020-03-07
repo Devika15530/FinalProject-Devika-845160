@@ -25,12 +25,13 @@ import { RegisterSellerComponent } from './Account/register-seller/register-sell
 import { ViewbuyerprofileComponent } from './Buyer/viewbuyerprofile/viewbuyerprofile.component';
 import { ViewsellerprofileComponent } from './Seller/viewsellerprofile/viewsellerprofile.component';
 import { HomeComponent } from './Account/home/home.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { RegisterBuyerComponent } from './Account/register-buyer/register-buyer.component'
 import { AccountService } from './Services/account.service';
 import { AdminService } from './Services/admin.service';
 import { ViewcategoriesComponent } from './admin/viewcategories/viewcategories.component';
 import { ViewsubcategoriesComponent } from './Admin/viewsubcategories/viewsubcategories.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -60,13 +61,15 @@ import { ViewsubcategoriesComponent } from './Admin/viewsubcategories/viewsubcat
     RegisterBuyerComponent,
     ViewcategoriesComponent,
     ViewsubcategoriesComponent,
+    LogoutComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AccountService,AdminService],
   bootstrap: [AppComponent]

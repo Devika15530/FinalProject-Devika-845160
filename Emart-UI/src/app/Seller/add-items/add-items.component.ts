@@ -47,7 +47,7 @@ selectedFile : File = null;
      
     SellerId:['',[Validators.required]],
       //SellerName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,15}$')]],
-      ItemName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,15}$')]],
+      ItemName:['',[Validators.required,Validators.pattern('^[a-zA-Z][0-40]{3,15}$')]],
       // CategoryId:['',[Validators.required,Validators.pattern("^[0-9]{1,5}$")]],
      Price:['',[Validators.required]],
       Description:['',Validators.required],

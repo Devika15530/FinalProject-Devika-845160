@@ -8,14 +8,14 @@ import { Seller } from '../Model/seller';
 
 
 
-const Requestheaders={headers:new HttpHeaders({'content-Type':'application/json',})}
+const Requestheaders={headers:new HttpHeaders({'content-Type':'application/json','Authorization':'Bearer'+localStorage.getItem('token')})}
 @Injectable({
   providedIn: 'root'
 })
 export class SellerService {
 
   url:string='http://localhost:53818/Item/'
-  // url1:string='http://localhost:53818/Seller/'
+   url1:string='http://localhost:53818/Seller/'
   constructor(private http:HttpClient) { }
 
   public AddItem(item:Items):Observable<any>
@@ -52,6 +52,10 @@ public GetItem(id:string) : Observable<Items>
   return this.http.get<Items>(this.url+'GetItem/'+id,Requestheaders)
 }
 
+public ViewProfile(id:string) : Observable<Seller>
+{
+  return this.http.get<Seller>(this.url1+'ViewProfile/'+id,Requestheaders)
+}
 
 
 }

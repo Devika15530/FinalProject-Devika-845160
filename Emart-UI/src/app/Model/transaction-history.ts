@@ -2,12 +2,12 @@ export class TransactionHistory {
 
 
     id:string;
-    buyerid:string;
-    sellerid:string;
-    transactionid:string;
-    itemid:string;
-    numberofitems:string;
-    datetime:Date;
+    buyerId:string;
+    sellerId:string;
+    transactionId:string;
+    itemId:string;
+    numberOfItems:string;
+    dateTime:Date;
     remarks:string;
-    transactiontype:string;
+    transactionType:string;
 }

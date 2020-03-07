@@ -68,16 +68,16 @@ sellerlist:Seller[];
     {
 
       this.seller=new Seller();
-      this.seller.sellerid=this.registerForm.value["sellerid"];
-      this.seller.username=this.registerForm.value["username"];
-      this.seller.mobileno=(this.registerForm.value["mobileno"]);
-      this.seller.companyname=this.registerForm.value["companyname"];
+      this.seller.sellerId=this.registerForm.value["sellerid"];
+      this.seller.userName=this.registerForm.value["username"];
+      this.seller.mobileNo=(this.registerForm.value["mobileno"]);
+      this.seller.companyName=this.registerForm.value["companyname"];
       this.seller.gstin=this.registerForm.value["gstin"];
       this.seller.password=this.registerForm.value["password"];
-      this.seller.postaladdress=this.registerForm.value["postaladdress"];
+      this.seller.postalAddress=this.registerForm.value["postaladdress"];
       this.seller.website=this.registerForm.value["website"];
-      this.seller.emailid=this.registerForm.value["emailid"];
-      this.seller.briefdetails=this.registerForm.value["briefdetails"];
+      this.seller.emailId=this.registerForm.value["emailid"];
+      this.seller.briefDetails=this.registerForm.value["briefdetails"];
       this.service.RegisterSeller(this.seller).subscribe
       (
         res=>

@@ -8,6 +8,15 @@ namespace Emart.BuyerService.repositories
 {
     public interface IBuyerRepository
     {
+
+
+
+        void Addtocart(Cart cartobj);
+
+        void Deletefromcart(string cartid);
+
+        List<Cart> ViewCart();
+
         List<Items> SearchItems(string name);
 
         void BuyItem(TransactionHistory item);

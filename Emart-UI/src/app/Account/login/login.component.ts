@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder,FormGroup,Validators} from "@angular/forms";
-import { Token } from 'src/app/Model/token';
-import { AccountService } from 'src/app/Services/account.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Buyer } from 'src/app/Model/buyer';
+import { Seller } from 'src/app/Model/seller';
 import { Router } from '@angular/router';
+import { AccountService } from 'src/app/Services/account.service';
+import { Token } from 'src/app/Model/token';
 
 @Component({
   selector: 'app-login',
@@ -54,7 +56,8 @@ public Validate()
       console.log(res);
       this.token=res;
 console.log(this.token);
-localStorage.setItem('buyerid',this.token.buyerId);
+localStorage.setItem('token',this.token.token);
+localStorage.setItem('buyerId',this.token.buyerId);
       if(this.token.msg=='success'){
           this.route.navigateByUrl('/buyer');
       }
@@ -69,8 +72,8 @@ if(role=='seller')
 this.service.SellerLogin(username,password).subscribe(res=>{
   console.log(res)
   this.token=res;
-  console.log(this.token);
-  localStorage.setItem('sellerId',this.token.sellerId);
+  localStorage.setItem('token',this.token.token);
+  localStorage.setItem('sellerid',this.token.sellerId);
   if(this.token.msg=="success"){
     this.route.navigateByUrl("/seller")
   }
@@ -82,6 +85,10 @@ this.service.SellerLogin(username,password).subscribe(res=>{
 }
 if(username=="Admin" && password=="admin")
 {
+  localStorage.setItem('token',this.token.token);
+
+
+  
   this.route.navigateByUrl("/admin");
 }
 }

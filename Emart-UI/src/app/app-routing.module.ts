@@ -24,14 +24,15 @@ import { HomeComponent } from './Account/home/home.component';
 import { RegisterBuyerComponent } from './Account/register-buyer/register-buyer.component';
 import { ViewcategoriesComponent } from './admin/viewcategories/viewcategories.component';
 import { ViewsubcategoriesComponent } from './Admin/viewsubcategories/viewsubcategories.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 const routes: Routes = [
   {path:'buyer',component:BuyerComponent,children:
   [{path:'search',component:SearchComponent},
- { path:'viewcart',component:ViewCartComponent},
+ { path:'view-cart',component:ViewCartComponent},
  { path:'purchasehistory',component:PurchaseHistoryComponent},
- { path:'buyproduct',component:BuyProductComponent},
+ { path:'buy-product',component:BuyProductComponent},
  { path:'viewprofile',component:ViewbuyerprofileComponent},
 ]},
 
@@ -39,7 +40,7 @@ const routes: Routes = [
 [
   {path:'add-items',component:AddItemsComponent},
   {path:'view-items',component:ViewItemsComponent},
-  {path:'view-profile',component:ViewsellerprofileComponent},
+  {path:'viewsellerprofile',component:ViewsellerprofileComponent},
   {path:'view-reports',component:ViewReportsComponent},
 
 
@@ -67,6 +68,8 @@ const routes: Routes = [
 {path:'register-seller',component:RegisterSellerComponent},
 
 ]},
+
+{path:'logout',component:LogoutComponent}
 ];
 
 
