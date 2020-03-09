@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.BuyerService", "Emart.BuyerService\Emart.BuyerService.csproj", "{F2DCAAAA-BC86-4C43-AC4C-E6FBDE8B29E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.BuyerService", "Emart.BuyerService\Emart.BuyerService.csproj", "{F2DCAAAA-BC86-4C43-AC4C-E6FBDE8B29E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.SellerService", "Emart.SellerService\Emart.SellerService.csproj", "{0D95B3B7-29BD-4991-929F-12BF5F330DDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.SellerService", "Emart.SellerService\Emart.SellerService.csproj", "{0D95B3B7-29BD-4991-929F-12BF5F330DDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.AdminService", "Emart.AdminService\Emart.AdminService.csproj", "{E8376513-6576-49ED-AD60-628080126F88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.AdminService", "Emart.AdminService\Emart.AdminService.csproj", "{E8376513-6576-49ED-AD60-628080126F88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.GateWay", "Emart.GateWay\Emart.GateWay.csproj", "{0AA43E73-23A8-4A32-A6CF-36A9C1262FC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.GateWay", "Emart.GateWay\Emart.GateWay.csproj", "{0AA43E73-23A8-4A32-A6CF-36A9C1262FC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.AccountService", "Emart.AccountService\Emart.AccountService.csproj", "{C5A25036-2F96-4417-A51B-32CE7ECC1821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emart.AccountService", "Emart.AccountService\Emart.AccountService.csproj", "{C5A25036-2F96-4417-A51B-32CE7ECC1821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emart.Test", "Emart.Test\Emart.Test.csproj", "{28B3D176-53C8-4C53-B969-37F9CFB9151D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{C5A25036-2F96-4417-A51B-32CE7ECC1821}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5A25036-2F96-4417-A51B-32CE7ECC1821}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5A25036-2F96-4417-A51B-32CE7ECC1821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B3D176-53C8-4C53-B969-37F9CFB9151D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B3D176-53C8-4C53-B969-37F9CFB9151D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B3D176-53C8-4C53-B969-37F9CFB9151D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B3D176-53C8-4C53-B969-37F9CFB9151D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

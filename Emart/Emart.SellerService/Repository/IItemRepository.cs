@@ -17,7 +17,7 @@ namespace Emart.SellerService.Repository
 
         void DeleteItem(string itemid);
          List<Category> GetCategories();
-                  List<SubCategory> GetSubCategories(string catid);
+            List<SubCategory> GetSubCategories(string catid);
                                    
         void UpdateItem(Items itemobj);
 

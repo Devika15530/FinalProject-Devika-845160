@@ -126,3 +126,8 @@ body {
       float: none;
     }
   }
+#b1
+{
+  background-attachment: fixed;
+  background-image:url("https://media.gettyimages.com/photos/handsome-man-shopping-online-picture-id509104190?s=2048x2048")
+}
