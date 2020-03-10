@@ -1,10 +1,10 @@
 export class Buyer {
 
-    BuyerId:string;
-    UserName:string;
-    Password:string;
-    EmailId:string;
-    MobileNo :string;
+    buyerId:string;
+    userName:string;
+    password:string;
+    emailId:string;
+    mobileNo :string;
     CreatedDateTime:Date;
     
 }

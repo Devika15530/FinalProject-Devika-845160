@@ -55,11 +55,11 @@ buyerlist:Buyer[]
 Register()
 {
   this.buyer=new Buyer();
-  this.buyer.BuyerId='C'+Math.floor(Math.random()*100);;
-this.buyer.UserName=this.registerForm.value["UserName"];
-this.buyer.Password=this.registerForm.value["Password"];
-this.buyer.MobileNo=this.registerForm.value["MobileNo"];
-this.buyer.EmailId=this.registerForm.value["EmailId"];
+  this.buyer.buyerId='C'+Math.floor(Math.random()*100);;
+this.buyer.userName=this.registerForm.value["UserName"];
+this.buyer.password=this.registerForm.value["Password"];
+this.buyer.mobileNo=this.registerForm.value["MobileNo"];
+this.buyer.emailId=this.registerForm.value["EmailId"];
 this.buyer.CreatedDateTime=new Date();
 this.service.RegisterBuyer(this.buyer).subscribe
       (

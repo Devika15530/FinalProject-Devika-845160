@@ -15,18 +15,18 @@ namespace Emart.BuyerService.repositories
 
         void Deletefromcart(string cartid);
 
-        List<Cart> ViewCart();
+        List<Cart> ViewCart(string bid);
 
         List<Items> SearchItems(string name);
 
-        void BuyItem(TransactionHistory item);
+        void BuyItem(Transactionhistory item);
 
         void EditProfile(Buyer obj);
 
 
         Buyer GetProfile(string bid);
 
-        List<TransactionHistory> TransactionHistory(string bid);
+        List<Transactionhistory> TransactionHistory(string bid);
 
 
         List<Category> GetCategory();

@@ -37,7 +37,7 @@ namespace Emart.BuyerService.Controllers
 
         [HttpPost]
         [Route("BuyItem")]
-        public IActionResult BuyItem(TransactionHistory item)
+        public IActionResult BuyItem(Transactionhistory item)
         {
             try
             {
@@ -103,7 +103,20 @@ namespace Emart.BuyerService.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("ViewCart/{bid}")]
+        public IActionResult ViewCart(string bid)
+        {
+            try
+            {
 
+                return Ok(_ibuyrepo.ViewCart(bid));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.InnerException.Message);
+            }
+        }
 
 
         [HttpGet]
@@ -169,20 +182,7 @@ namespace Emart.BuyerService.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("ViewCart")]
-        public IActionResult ViewCart()
-        {
-            try
-            {
-
-                return Ok(_ibuyrepo.ViewCart());
-            }
-            catch (Exception ex)
-            {
-                return NotFound(ex.InnerException.Message);
-            }
-        }
+       
 
 
 

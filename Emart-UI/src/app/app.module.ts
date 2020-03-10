@@ -29,9 +29,10 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { RegisterBuyerComponent } from './Account/register-buyer/register-buyer.component'
 import { AccountService } from './Services/account.service';
 import { AdminService } from './Services/admin.service';
-import { ViewcategoriesComponent } from './admin/viewcategories/viewcategories.component';
+
 import { ViewsubcategoriesComponent } from './Admin/viewsubcategories/viewsubcategories.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ViewcategoriesComponent } from './Admin/viewcategories/viewcategories.component';
 
 @NgModule({
   declarations: [
@@ -59,9 +60,11 @@ import { LogoutComponent } from './logout/logout.component';
     ViewsellerprofileComponent,
     HomeComponent,
     RegisterBuyerComponent,
-    ViewcategoriesComponent,
+
     ViewsubcategoriesComponent,
     LogoutComponent,
+    ViewcategoriesComponent,
+    
     
   ],
   imports: [

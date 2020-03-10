@@ -22,9 +22,10 @@ import { ViewbuyerprofileComponent } from './Buyer/viewbuyerprofile/viewbuyerpro
 import { ViewsellerprofileComponent } from './Seller/viewsellerprofile/viewsellerprofile.component';
 import { HomeComponent } from './Account/home/home.component';
 import { RegisterBuyerComponent } from './Account/register-buyer/register-buyer.component';
-import { ViewcategoriesComponent } from './admin/viewcategories/viewcategories.component';
+
 import { ViewsubcategoriesComponent } from './Admin/viewsubcategories/viewsubcategories.component';
 import { LogoutComponent } from './logout/logout.component';
+
 
 
 const routes: Routes = [
@@ -33,7 +34,7 @@ const routes: Routes = [
  { path:'view-cart',component:ViewCartComponent},
  { path:'purchasehistory',component:PurchaseHistoryComponent},
  { path:'buy-product',component:BuyProductComponent},
- { path:'viewprofile',component:ViewbuyerprofileComponent},
+ { path:'viewbuyerprofile',component:ViewbuyerprofileComponent},
 ]},
 
 {path:'seller',component:SellerComponent,children:
@@ -55,7 +56,7 @@ const routes: Routes = [
   {path:'add-sub-category',component:AddSubCategoryComponent},
   {path:'dailyreports',component:DailyreportsComponent},
 
-  {path:'viewcategories',component:ViewcategoriesComponent},
+ 
   {path:'viewsubcategories',component:ViewsubcategoriesComponent}
 ]},
 
@@ -69,7 +70,10 @@ const routes: Routes = [
 
 ]},
 
-{path:'logout',component:LogoutComponent}
+
+{path:'logout',component:LogoutComponent},
+
+{path:'',component:HomeComponent}
 ];
 
 

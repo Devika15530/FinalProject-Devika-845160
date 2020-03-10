@@ -24,7 +24,6 @@ E:\FinalProject 845160\Emart\Emart.AccountService\bin\Debug\netcoreapp3.1\Micros
 E:\FinalProject 845160\Emart\Emart.AccountService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 E:\FinalProject 845160\Emart\Emart.AccountService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 E:\FinalProject 845160\Emart\Emart.AccountService\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-E:\FinalProject 845160\Emart\Emart.AccountService\obj\Debug\netcoreapp3.1\Emart.AccountService.csprojAssemblyReference.cache
 E:\FinalProject 845160\Emart\Emart.AccountService\obj\Debug\netcoreapp3.1\Emart.AccountService.csproj.CopyComplete
 E:\FinalProject 845160\Emart\Emart.AccountService\bin\Debug\netcoreapp3.1\Emart.AccountService.deps.json
 E:\FinalProject 845160\Emart\Emart.AccountService\bin\Debug\netcoreapp3.1\Emart.AccountService.runtimeconfig.json

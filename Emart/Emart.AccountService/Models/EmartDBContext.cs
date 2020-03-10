@@ -22,7 +22,7 @@ namespace Emart.AccountService.Models
         public virtual DbSet<Items> Items { get; set; }
         public virtual DbSet<Seller> Seller { get; set; }
         public virtual DbSet<SubCategory> SubCategory { get; set; }
-        public virtual DbSet<TransactionHistory> TransactionHistory { get; set; }
+        public virtual DbSet<Transactionhistory> Transactionhistory { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -80,7 +80,12 @@ namespace Emart.AccountService.Models
             {
                 entity.Property(e => e.CartId)
                     .HasColumnName("cartId")
-                    .HasMaxLength(10)
+                    .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.BuyerId)
+                    .HasColumnName("buyerId")
+                    .HasMaxLength(5)
                     .IsUnicode(false);
 
                 entity.Property(e => e.CategoryId)
@@ -95,9 +100,8 @@ namespace Emart.AccountService.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.Image)
-                    .IsRequired()
                     .HasColumnName("image")
-                    .HasMaxLength(50)
+                    .HasMaxLength(30)
                     .IsUnicode(false);
 
                 entity.Property(e => e.ItemId)
@@ -107,19 +111,12 @@ namespace Emart.AccountService.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.Itemname)
-                    .IsRequired()
                     .HasColumnName("itemname")
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Price)
-                    .IsRequired()
-                    .HasColumnName("price")
                     .HasMaxLength(30)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Remarks)
-                    .HasColumnName("remarks")
+                entity.Property(e => e.Price)
+                    .HasColumnName("price")
                     .HasMaxLength(30)
                     .IsUnicode(false);
 
@@ -135,29 +132,34 @@ namespace Emart.AccountService.Models
                     .HasMaxLength(5)
                     .IsUnicode(false);
 
+                entity.HasOne(d => d.Buyer)
+                    .WithMany(p => p.Cart)
+                    .HasForeignKey(d => d.BuyerId)
+                    .HasConstraintName("FK__Cart__buyerId__7A3223E8");
+
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Cart)
                     .HasForeignKey(d => d.CategoryId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Cart__categoryId__625A9A57");
+                    .HasConstraintName("FK__Cart__categoryId__7B264821");
 
                 entity.HasOne(d => d.Item)
                     .WithMany(p => p.Cart)
                     .HasForeignKey(d => d.ItemId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Cart__itemId__65370702");
+                    .HasConstraintName("FK__Cart__itemId__7E02B4CC");
 
                 entity.HasOne(d => d.Seller)
                     .WithMany(p => p.Cart)
                     .HasForeignKey(d => d.SellerId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Cart__sellerId__6442E2C9");
+                    .HasConstraintName("FK__Cart__sellerId__7D0E9093");
 
                 entity.HasOne(d => d.Subcategory)
                     .WithMany(p => p.Cart)
                     .HasForeignKey(d => d.SubcategoryId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Cart__subcategor__634EBE90");
+                    .HasConstraintName("FK__Cart__subcategor__7C1A6C5A");
             });
 
             modelBuilder.Entity<Category>(entity =>
@@ -373,14 +375,13 @@ namespace Emart.AccountService.Models
                     .HasConstraintName("FK__SubCatego__Categ__37703C52");
             });
 
-            modelBuilder.Entity<TransactionHistory>(entity =>
+            modelBuilder.Entity<Transactionhistory>(entity =>
             {
-                entity.HasIndex(e => e.TransactionId)
-                    .HasName("UQ__Transact__55433A6AEFE24904")
-                    .IsUnique();
+                entity.HasKey(e => e.TransactionId)
+                    .HasName("PK__Transact__55433A6BE66355F0");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(5)
+                entity.Property(e => e.TransactionId)
+                    .HasMaxLength(10)
                     .IsUnicode(false);
 
                 entity.Property(e => e.BuyerId)
@@ -389,8 +390,17 @@ namespace Emart.AccountService.Models
 
                 entity.Property(e => e.DateTime).HasColumnType("datetime");
 
+                entity.Property(e => e.Image)
+                    .HasColumnName("image")
+                    .HasMaxLength(30)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.ItemId)
                     .HasMaxLength(5)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.ItemName)
+                    .HasMaxLength(30)
                     .IsUnicode(false);
 
                 entity.Property(e => e.NumberOfItems)
@@ -398,16 +408,12 @@ namespace Emart.AccountService.Models
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Remarks)
-                    .HasMaxLength(20)
+                entity.Property(e => e.Price)
+                    .HasColumnName("price")
+                    .HasMaxLength(30)
                     .IsUnicode(false);
 
                 entity.Property(e => e.SellerId)
-                    .HasMaxLength(5)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.TransactionId)
-                    .IsRequired()
                     .HasMaxLength(5)
                     .IsUnicode(false);
 
@@ -417,19 +423,19 @@ namespace Emart.AccountService.Models
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.Buyer)
-                    .WithMany(p => p.TransactionHistory)
+                    .WithMany(p => p.Transactionhistory)
                     .HasForeignKey(d => d.BuyerId)
-                    .HasConstraintName("FK__Transacti__Buyer__55009F39");
+                    .HasConstraintName("FK__Transacti__Buyer__756D6ECB");
 
                 entity.HasOne(d => d.Item)
-                    .WithMany(p => p.TransactionHistory)
+                    .WithMany(p => p.Transactionhistory)
                     .HasForeignKey(d => d.ItemId)
-                    .HasConstraintName("FK__Transacti__ItemI__56E8E7AB");
+                    .HasConstraintName("FK__Transacti__ItemI__7755B73D");
 
                 entity.HasOne(d => d.Seller)
-                    .WithMany(p => p.TransactionHistory)
+                    .WithMany(p => p.Transactionhistory)
                     .HasForeignKey(d => d.SellerId)
-                    .HasConstraintName("FK__Transacti__Selle__55F4C372");
+                    .HasConstraintName("FK__Transacti__Selle__76619304");
             });
 
             OnModelCreatingPartial(modelBuilder);
