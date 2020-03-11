@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</head>
-<body id="b1">
+  
+ <div class="row">
   <div class="col-lg-12">
     <div class="topnav">
         <a class="active"  href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
@@ -22,32 +15,31 @@
           </form>
         </div> -->
         
-
+      </div>
       </div>
   </div>
-
-
+<div class="row">
+ 
   <div class="col-lg-1">
       <div class="sidenav">
         <a href=#><span class="glyphicon glyphicon-shopping-cart"></span> BuyProduct</a>
-        <a href=#><span class="glyphicon glyphicon-time"> </span>  PurchaseHistory </a>
-        <a href=#><span class="glyphicon glyphicon-sunglasses"> </span>  ViewCart</a>
+        <a [routerLink]="['purchase-history']"><span class="glyphicon glyphicon-time"> </span>  PurchaseHistory </a>
+        <a [routerLink]="['view-cart']"  ><span class="glyphicon glyphicon-sunglasses"> </span>  ViewCart</a>
    
     </div>
   </div>
-
-  <div class="col-lg-4">
+  
+  <div class="col-lg-2">
     
   </div>
  
-
+  <div class="b1">
   <div class="col-lg-7">
-    <div class="col-lg-2">
+    
       <router-outlet></router-outlet>
+  
     </div>
-    </div>
-</body>
-</html>
+  </div>
 
-
+</div>
 
