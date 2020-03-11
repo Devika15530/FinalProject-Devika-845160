@@ -4,13 +4,13 @@
 * {box-sizing: border-box;}
 
  .b1 {
-   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+   
+  
   background-attachment: fixed;
   background-size: cover; 
 
 
-  
+  height:600px;
 
  position:relative;
 
@@ -20,7 +20,7 @@
 
 .topnav {
   overflow: hidden;
-  background-color:burlywood;
+  background-color:aliceblue;
   position:relative;
 }
 

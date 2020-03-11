@@ -17,6 +17,7 @@ buyer:Buyer;
  
   constructor(private fromBuilder:FormBuilder,private service:BuyerService) {
     let sid= localStorage.getItem('buyerId')
+    console.log(sid);
  this.service.ViewProfile(sid).subscribe(res=>
   {
     this.buyer=res;

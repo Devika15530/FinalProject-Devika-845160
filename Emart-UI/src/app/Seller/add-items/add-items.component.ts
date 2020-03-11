@@ -128,7 +128,7 @@ get f()
 
       this.item=new Items();
       this.item.itemId='I'+Math.floor(Math.random()*1000);
-      this.item.sellerId=this.itemForm.value["SellerId"];
+      this.item.sellerId=localStorage.getItem('sellerid');
       this.item.itemName=this.itemForm.value["ItemName"];
       this.item.image=this.image;
       this.item.categoryId=(this.itemForm.value["CategoryName"]);
@@ -144,6 +144,8 @@ get f()
         res=>
         {
           console.log(this.item)
+          alert("item added");
+          
           console.log('Record Added');
         },
         err=>

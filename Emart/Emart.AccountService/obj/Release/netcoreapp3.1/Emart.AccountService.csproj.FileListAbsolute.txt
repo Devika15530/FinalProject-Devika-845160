@@ -127,3 +127,4 @@ E:\FinalProject 845160\Emart\Emart.AccountService\obj\Release\netcoreapp3.1\Emar
 E:\FinalProject 845160\Emart\Emart.AccountService\obj\Release\netcoreapp3.1\Emart.AccountService.csproj.CopyComplete
 E:\FinalProject 845160\Emart\Emart.AccountService\obj\Release\netcoreapp3.1\Emart.AccountService.dll
 E:\FinalProject 845160\Emart\Emart.AccountService\obj\Release\netcoreapp3.1\Emart.AccountService.pdb
+E:\FinalProject 845160\Emart\Emart.AccountService\obj\Release\netcoreapp3.1\Emart.AccountService.csprojAssemblyReference.cache

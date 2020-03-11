@@ -1,3 +1,6 @@
+
+
+
 <form [formGroup]="itemForm" >
   <div class="container py-5">  
     <h3 class="text-center text-uppercase">List of Items</h3>  
@@ -5,11 +8,11 @@
         <thead>  
             <tr class="text-center text-uppercase">  
                 
-                <th>SellerId</th> 
+                <!-- <th>SellerId</th> 
                 <th>CategoryId</th> 
                 
                 <th>SubcategoryId</th>
-                <th>ItemID</th>  
+                <th>ItemID</th>   -->
                 <th>ItemName</th>  
                 <th>Image</th>
                   
@@ -17,16 +20,18 @@
                 <th>Price</th>   
                 <th>StockNumber</th>  
            
-                <th>Remarks</th> 
+                <!-- <th>Remarks</th>  -->
+                <th>Delete</th>
+                <th>Edit</th>
                
             </tr>  
         </thead>  
         <tbody>  
           <tr *ngFor="let item of itemlist"> 
-            <td>{{item.sellerId}}</td>  
+            <!-- <td>{{item.sellerId}}</td>  
             <td>{{item.categoryId}}</td> 
             <td>{{item.subcategoryId}}</td> 
-            <td>{{item.itemId}}</td>  
+            <td>{{item.itemId}}</td>   -->
             <td>{{item.itemName}}</td> 
             <td>{{item.image}}</td> 
             <td>{{item.description}}</td>
@@ -37,7 +42,7 @@
          
             
               
-            <td>{{item.remarks}}</td>  
+            <!-- <td>{{item.remarks}}</td>   -->
             <td> <button class='btn btn-danger' (click)="DeleteItem(item.itemId)">Delete</button> </td>
             <!-- <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"(click)="UpdateItem()">Edit</button></td>
              -->

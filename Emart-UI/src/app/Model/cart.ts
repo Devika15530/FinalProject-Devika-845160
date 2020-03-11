@@ -1,6 +1,6 @@
 export class Cart {
 
-
+     buyerId:string;
     cartId:string;
     itemId:string;
     categoryId:string;
