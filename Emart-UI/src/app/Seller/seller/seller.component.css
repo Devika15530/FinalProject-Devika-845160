@@ -78,6 +78,22 @@ body {
     float: right;
 }
 
+.b1 {
+   
+  
+  background-attachment: fixed;
+  background-size: cover; 
+
+
+  height:600px;
+
+ position:relative;
+
+ 
+  background-image:url("https://media.gettyimages.com/photos/small-business-owner-packing-clothes-in-the-box-at-workplace-asian-picture-id1035609340?s=2048x2048")
+} 
+
+
 
 .sidenav a {
   

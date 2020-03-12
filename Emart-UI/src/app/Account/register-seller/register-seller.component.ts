@@ -19,16 +19,16 @@ sellerlist:Seller[];
   ngOnInit() {
     this.registerForm=this.fromBuilder.group({
       // title:['',Validators.required],
-      sellerid:['',[Validators.required]],
-      username:['',[Validators.required,Validators.pattern('^[a-z]{3,6}$')]],
-      mobileno:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
-      emailid:['',[Validators.required,Validators.email]],
+  
+      userName:['',[Validators.required,Validators.pattern('^[a-z]{3,6}$')]],
+      mobileNo:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
+      emailId:['',[Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(6)]],
-      postaladdress:['',Validators.required],
+      postalAddress:['',Validators.required],
       gstin :['',Validators.required],
       website:['',[Validators.required,Validators.maxLength(25)]],
-      companyname:['',[Validators.required,Validators.maxLength(30)]],
-      briefdetails:['',[Validators.required,Validators.maxLength(70)]],
+      companyName:['',[Validators.required,Validators.maxLength(30)]],
+      briefDetails:['',[Validators.required,Validators.maxLength(70)]],
       // acceptTerms:[false,Validators.requiredTrue]
     
     });
@@ -69,15 +69,15 @@ sellerlist:Seller[];
 
       this.seller=new Seller();
       this.seller.sellerId='C'+Math.floor(Math.random()*100);;
-      this.seller.userName=this.registerForm.value["username"];
-      this.seller.mobileNo=(this.registerForm.value["mobileno"]);
-      this.seller.companyName=this.registerForm.value["companyname"];
+      this.seller.userName=this.registerForm.value["userName"];
+      this.seller.mobileNo=(this.registerForm.value["mobileNo"]);
+      this.seller.companyName=this.registerForm.value["companyName"];
       this.seller.gstin=this.registerForm.value["gstin"];
       this.seller.password=this.registerForm.value["password"];
-      this.seller.postalAddress=this.registerForm.value["postaladdress"];
+      this.seller.postalAddress=this.registerForm.value["postalAddress"];
       this.seller.website=this.registerForm.value["website"];
-      this.seller.emailId=this.registerForm.value["emailid"];
-      this.seller.briefDetails=this.registerForm.value["briefdetails"];
+      this.seller.emailId=this.registerForm.value["emailId"];
+      this.seller.briefDetails=this.registerForm.value["briefDetails"];
       this.service.RegisterSeller(this.seller).subscribe
       (
         res=>

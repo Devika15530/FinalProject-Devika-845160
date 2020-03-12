@@ -1,0 +1,34 @@
+.jumbotron
+{
+width: 350px;
+
+
+background-image: url("src\assets\image\bp.jpg"); 
+background-size: cover;
+height:350px;
+
+position:relative;
+}
+
+.usericon input {
+    padding-left:25px;
+}
+/* .usericon:before {
+    height: 100%;
+    width: 25px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    position: absolute;
+    content: "\e008";
+    font-family: 'Glyphicons Halflings';
+    pointer-events: none;
+} */
+
+
+
+
+label{
+    color:rgb(50, 109, 136);
+    font-style:bold ;
+}

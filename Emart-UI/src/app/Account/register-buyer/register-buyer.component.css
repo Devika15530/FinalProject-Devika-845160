@@ -105,12 +105,14 @@ h1{
 
 
 
-#b1
-{
-  background-image: url("src\assets\image\rg.jpg");
-}
-
-
+  .jumbotron{
+    width : 300px;
+  
+    background-image: url("src\assets\image\log1.jpg");
+    position:relative;
+    background-size: cover;
+    
+  }
 
 
 

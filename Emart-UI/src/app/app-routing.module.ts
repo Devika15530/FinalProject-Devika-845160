@@ -56,6 +56,7 @@ const routes: Routes = [
   {path:'add-sub-category',component:AddSubCategoryComponent},
   {path:'dailyreports',component:DailyreportsComponent},
 
+  {path:'viewcategories',component:ViewsubcategoriesComponent},
  
   {path:'viewsubcategories',component:ViewsubcategoriesComponent}
 ]},

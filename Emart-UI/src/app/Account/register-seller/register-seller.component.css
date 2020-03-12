@@ -35,7 +35,7 @@ border-radius: 10px 45px 45px 45px;
     border-bottom-color: rgb(15, 66, 107);
   }
   .jumbotron{
-   width : 400px;
+   width : 700px;
 }
 h1{
   color: blue;
@@ -104,11 +104,11 @@ h1{
 
 
 
-
+/* 
 #b1
 {
   background-image: url("src\assets\image\rg.jpg");
-}
+} */
 
 
 
@@ -181,7 +181,14 @@ body {
   border: none;
   cursor: pointer;
 }
+.jumbotron{
+  width : 400px;
 
+  background-image: url("src\assets\image\log1.jpg");
+  position:relative;
+  background-size: cover;
+  
+}
 .topnav .search-container button:hover {
   background: #ccc;
 }

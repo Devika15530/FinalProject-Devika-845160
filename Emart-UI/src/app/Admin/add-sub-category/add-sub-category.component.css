@@ -170,13 +170,16 @@ span
 {
   float:right;
 }
-.jumbotron{
-  width : 300px;
+.jumbotron
+{
+width: 350px;
 
-  /* background-image: url("src/assets/image/log.jpg"); */
-  position:relative;
-  background-size: cover;
-  
+
+background-image: url("src\assets\image\bp.jpg"); 
+background-size: cover;
+height:500 px;
+
+position:relative;
 }
 h4{
   text-align: CENTER;
