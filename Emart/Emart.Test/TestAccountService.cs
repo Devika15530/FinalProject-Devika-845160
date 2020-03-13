@@ -32,57 +32,57 @@ namespace Emart.Test
         [Description("TestSellerLogin()")]
         public void TestSellerLogin()
         {
-            var result = _acrepo.SellerLogin("jaggu", "jaga");
+            var result = _acrepo.SellerLogin("jaggu", "1234");
             Assert.IsNotNull(result);
         }
 
 
-        //[Test]
-        //[Description("TestBuyerRegister()")]
-        //public void TestBuyerRegister()
-        //{
-        //    _acrepo.BuyerRegister(new Buyer()
-        //    {
+        [Test]
+        [Description("TestBuyerRegister()")]
+        public void TestBuyerRegister()
+        {
+            _acrepo.BuyerRegister(new Buyer()
+            {
 
-        //        BuyerId = "4",
-        //        UserName = "Navya",
-        //        EmailId = "nav@14",
-        //        Password = "123456",
-        //        MobileNo = "9912897856",
-        //        CreatedDateTime = DateTime.Now
-        //    });
-        //    var result = _acrepo.BuyerLogin("Navya", "123456");
-        //    Assert.IsNotNull(result);
+                BuyerId = "7",
+                UserName = "Johny",
+                EmailId = "Johny@14",
+                Password = "Johny456",
+                MobileNo = "9956844856",
+                CreatedDateTime = DateTime.Now
+            });
+            var result = _acrepo.BuyerLogin("Johny", "Johny456");
+            Assert.IsNotNull(result);
 
-        //}
-
-
+        }
 
 
 
 
-        //[Test]
-        //[Description("TestSellerRegister()")]
-        //public void TestSellerRegister()
-        //{
-        //    _acrepo.SellerRegister(new Seller()
-        //    {
 
-        //        SellerId = "5",
-        //        UserName = "Navya",
-        //        EmailId = "nav@14",
-        //        Password = "123456",
-        //        MobileNo = "9912897856",
-        //       CompanyName="Ctso",
-        //       Gstin="abckd",
-        //       BriefDetails="ntng",
-        //       PostalAddress="chennai",
-        //       Website="cts.com"
-        //    });
-        //    var result = _acrepo.SellerLogin("Navya", "123456");
-        //    Assert.IsNotNull(result);
 
-        //}
+        [Test]
+        [Description("TestSellerRegister()")]
+        public void TestSellerRegister()
+        {
+            _acrepo.SellerRegister(new Seller()
+            {
+
+                SellerId = "7",
+                UserName = "Johny",
+                EmailId = "Johny@14",
+                Password = "Johny456",
+                MobileNo = "9956987856",
+                CompanyName = "tcs",
+                Gstin = "3756",
+                BriefDetails = "john",
+                PostalAddress = "chennai",
+                Website = "www.tcs.com"
+            });
+            var result = _acrepo.SellerLogin("John", "John456");
+            Assert.IsNotNull(result);
+
+        }
     }
 
 }

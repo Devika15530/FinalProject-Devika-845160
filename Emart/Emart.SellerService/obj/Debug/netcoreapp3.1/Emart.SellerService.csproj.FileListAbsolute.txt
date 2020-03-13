@@ -126,4 +126,5 @@ E:\FinalProject 845160\Emart\Emart.SellerService\bin\Debug\netcoreapp3.1\System.
 E:\FinalProject 845160\Emart\Emart.SellerService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\FinalProject 845160\Emart\Emart.SellerService\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 E:\FinalProject 845160\Emart\Emart.SellerService\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\FinalProject 845160\Emart\Emart.SellerService\obj\Debug\netcoreapp3.1\Emart.SellerService.csprojAssemblyReference.cache
 E:\FinalProject 845160\Emart\Emart.SellerService\obj\Debug\netcoreapp3.1\Emart.SellerService.MvcApplicationPartsAssemblyInfo.cache

@@ -81,7 +81,7 @@ namespace Emart.SellerService.Controllers
             }
 
             catch (Exception ex)
-            {
+            {        
                 return NotFound(ex.Message);
             }
         }

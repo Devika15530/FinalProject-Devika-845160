@@ -23,7 +23,7 @@ E:\FinalProject 845160\Emart\Emart.GateWay\bin\Debug\netcoreapp3.1\Microsoft.Ext
 E:\FinalProject 845160\Emart\Emart.GateWay\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 E:\FinalProject 845160\Emart\Emart.GateWay\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 E:\FinalProject 845160\Emart\Emart.GateWay\bin\Debug\netcoreapp3.1\Ocelot.dll
-E:\FinalProject 845160\Emart\Emart.GateWay\obj\Debug\netcoreapp3.1\Emart.GateWay.MvcApplicationPartsAssemblyInfo.cs
-E:\FinalProject 845160\Emart\Emart.GateWay\obj\Debug\netcoreapp3.1\Emart.GateWay.MvcApplicationPartsAssemblyInfo.cache
 E:\FinalProject 845160\Emart\Emart.GateWay\obj\Debug\netcoreapp3.1\Emart.GateWay.csproj.CopyComplete
 E:\FinalProject 845160\Emart\Emart.GateWay\bin\Debug\netcoreapp3.1\ocelot.json
+E:\FinalProject 845160\Emart\Emart.GateWay\obj\Debug\netcoreapp3.1\Emart.GateWay.MvcApplicationPartsAssemblyInfo.cs
+E:\FinalProject 845160\Emart\Emart.GateWay\obj\Debug\netcoreapp3.1\Emart.GateWay.MvcApplicationPartsAssemblyInfo.cache
