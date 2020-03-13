@@ -1,4 +1,17 @@
-<form [formGroup]="viewsubcatForm" >
+
+<div class="container-fluid">
+
+  <div class="row">
+     <div class="col-lg-4">
+
+
+  </div>
+
+
+  <div class="col-lg-8">
+
+
+<form [formGroup]="viewsubcatForm"  id="t1">
     <div class="view">
         
         <div class="container">
@@ -12,6 +25,7 @@
                        <th>SubCategory Name</th>
                        <th>GST</th>
                        <th>Brief Details</th>
+                       <th>Edit</th>
                    </tr>
                    <tr *ngFor="let item of viewsubcategoryList">
                         
@@ -22,7 +36,7 @@
                         <td>{{item.gst}}</td>
                         <td>{{item.briefDetails}}</td>
                         <td><button class="btn btn-primary btn-lg  mr-1" (click)="GetSubCatById(item.subcategoryId)" data-toggle="modal" data-target="#myModal">Edit</button></td>
-                        <td><button class="btn btn-danger  btn-lg  mr-1" (click)="Delete(item.subcategoryId)">Delete</button></td>
+                     
                    </tr>
                </table>
            </div>
@@ -84,4 +98,4 @@
         </div>
         
       </div>
-      
+      </div>

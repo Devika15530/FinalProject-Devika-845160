@@ -1,6 +1,8 @@
 .jumbotron
 {
     text-align: start;
-    width:500px;
+    width:400px;
     float:left;
+    background: -webkit-linear-gradient(rgb(116, 121, 165), rgb(143, 134, 172));
+    background: linear-gradient(rgb(140, 146, 185), rgb(108, 131, 172));
 }

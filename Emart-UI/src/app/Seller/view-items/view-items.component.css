@@ -1,0 +1,15 @@
+
+#t1
+{
+    width : 800px;
+    background: -webkit-linear-gradient(rgb(84, 93, 109), rgb(123, 121, 144));
+    background: linear-gradient(rgb(122, 128, 143), rgb(116, 139, 160));
+    
+    /* background-image: url("src/assets/image/log.jpg");  */
+    position:relative;
+    background-size: cover;
+}
+/* table{
+    background: -webkit-linear-gradient(rgb(128, 132, 179), rgb(143, 131, 175));
+    background: linear-gradient(rgb(147, 151, 202), rgb(80, 94, 119));
+} */

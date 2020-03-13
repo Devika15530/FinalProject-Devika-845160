@@ -1,0 +1,40 @@
+form{
+    width:800px;
+}
+table{
+    color:white;
+}
+
+#t1
+{
+    width : 800px;
+    background: -webkit-linear-gradient(rgb(182, 88, 101), rgb(173, 89, 89));
+    background: linear-gradient(rgb(149, 73, 83), rgb(221, 184, 184));
+    
+    /* background-image: url("src/assets/image/log.jpg");  */
+    position:relative;
+    background-size: cover;
+}
+
+th{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:rgb(243, 75, 75)
+}
+
+
+input[type=text], 
+input[type=password] { 
+  text-align: center;
+  width: 250px; 
+  height: 100%;
+  padding: 10px 20px; 
+  margin: 2px 0; 
+  display: grid; 
+  border: 2px solid #ccc; 
+  box-sizing: unset; 
+}
+
+button{
+    align-content: center;
+    
+}

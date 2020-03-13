@@ -1,0 +1,21 @@
+input[type=text], 
+input[type=password] { 
+    width: 100%; 
+    padding: 8px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box;
+    size: 20px; 
+
+    border-radius: 50px;
+} 
+
+.jumbotron
+{
+    text-align: start;
+    width:400px;
+    float:left;
+    background: -webkit-linear-gradient(rgb(134, 136, 165), rgb(153, 145, 173));
+    background: linear-gradient(rgb(179, 180, 190), rgb(143, 152, 167));
+}

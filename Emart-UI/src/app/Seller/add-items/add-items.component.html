@@ -3,7 +3,7 @@
 <div class="container-fluid">
 
   <div class="row">
-     <div class="col-lg-8">
+     <div class="col-lg-1">
 
 
   </div>
@@ -45,7 +45,7 @@
       <input type="text" formControlName="ItemName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ItemName.errors }" />
       <div *ngIf="submitted && f.ItemName.errors" class="invalid-feedback">
           <div *ngIf="f.ItemName.errors.required"> Name is required</div>
-          <div *ngIf="f.ItemName.errors.pattern">Enter only Alphabets</div>
+          <!-- <div *ngIf="f.ItemName.errors.pattern">Enter only Alphabets</div> -->
       </div>
   </div>
   </td>
@@ -137,7 +137,7 @@
   <td>
     <div class="text-center">
 
-      <button  type="submit" >Add</button>
+      <button  type="submit" class="btn btn-primary">Add</button>
       
    
   </div>
@@ -148,7 +148,7 @@
     <div class="text-center">
 
      
-      <button  type="reset" (click)="onReset()" >Reset</button>
+      <button  type="reset" (click)="onReset()"  class="btn btn-secondary" >Reset</button>
    
   </div>
   

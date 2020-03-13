@@ -1,39 +1,102 @@
+<div class="row">
+  <br>
+  <br>
+</div>
+<div class="row">
+
+  <div class="col-lg-6">
+    <br>
+  </div>
+<div class="col-lg-6">
+<div class="jumbotron">
 
 
-<div class='bold-line'></div>
-<div class='window'>
-  <div class='overlay'></div>
-  <div class='content'>
     <div class='welcome'>View Profile</div>
     <form [formGroup]="itemForm">
       <div class="input-fields">
-        <label>ID</label>
-        <input type="text" formControlName="sellerId" placeholder="Enter ID" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.sellerId.errors }" readonly />
-          
-          <label>NAME</label>
-          <input type="text" formControlName="userName" placeholder="Enter Name" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" />
-          
-        <label>Password</label>
-        <input type="password" formControlName="password" placeholder="Enter Password" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-          
-        <label>EMAIL</label>
-          <input type="text" formControlName="emailId" placeholder="Enter Email" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" />
+
+        <table>
+          <tr>
+            <td>
+              <label>ID</label>
+              <input type="text" formControlName="sellerId" placeholder="Enter ID" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.sellerId.errors }" readonly />
+            </td>
+            &nbsp;
+            <td>
+              <label>NAME</label>
+              <input type="text" formControlName="userName" placeholder="Enter Name" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" />
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+     
+              <label>Password</label>
+              <input type="password" formControlName="password" placeholder="Enter Password" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            </td>
+            &nbsp;
+            <td>
+              <label>EMAIL</label>
+              <input type="text" formControlName="emailId" placeholder="Enter Email" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.emailId.errors }" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label>MOBILE</label>
+              <input type="text" formControlName="mobileNo" placeholder="Enter Mobile Number" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.mobileNo.errors }" />
+            </td>&nbsp;
+            <td>
+              <label>Company Name</label>
+              <input type="text" formControlName="companyName" placeholder="Enter Company Name" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }" />
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <label>Address</label>
+              <input type="text" formControlName="postalAddress" placeholder="Enter Address" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.postalAddress.errors }" />
+            </td>&nbsp;
+
+
+            <td> 
+           
+              <label>GSTIN</label>
+              <input type="text" formControlName="gstin" placeholder="Enter GstIn" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.gstin.errors }" />
+            </td>
+          </tr>
          
-          <label>MOBILE</label>
-          <input type="text" formControlName="mobileNo" placeholder="Enter Mobile Number" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.mobileNo.errors }" />
+          <tr>
+            <td>
+              <label>BriefDetails</label>
+              <input type="text" formControlName="briefDetails" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.briefDetails.errors }" />
+            </td>
+            &nbsp;
+            <td>
+              <label>WEBSITE</label>
+              <input type="text" formControlName="website" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.website.errors }" />
+            </td>
+          </tr>
+
+        </table>
+      
           
-         <label>Company Name</label>
-          <input type="text" formControlName="companyName" placeholder="Enter Company Name" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.companyName.errors }" />
+       
+     
           
-         <label>Address</label>
-          <input type="text" formControlName="postalAddress" placeholder="Enter Address" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.postalAddress.errors }" />
+      
+         
+        
           
-         <label>GSTIN</label>
-          <input type="text" formControlName="gstin" placeholder="Enter GstIn" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.gstin.errors }" />
-          <label>BriefDetails</label>
-          <input type="text" formControlName="briefDetails" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.briefDetails.errors }" />
-          <label>WEBSITE</label>
-          <input type="text" formControlName="website" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.website.errors }" />
+       
+          
+      
+     
+      
+        
           <!-- <label>CreateDateTime</label>
           <input type="datetime" formControlName="createDateTime" placeholder="Enter Brief Details" class="form-control input-line full-width" [ngClass]="{ 'is-invalid': submitted && f.createDateTime.errors }" /> -->
           
@@ -45,5 +108,7 @@
        
       </div>
     </form>
+
   </div>
+</div>
 </div>

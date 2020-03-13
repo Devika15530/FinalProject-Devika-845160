@@ -25,6 +25,7 @@ import { RegisterBuyerComponent } from './Account/register-buyer/register-buyer.
 
 import { ViewsubcategoriesComponent } from './Admin/viewsubcategories/viewsubcategories.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ViewcategoriesComponent } from './Admin/viewcategories/viewcategories.component';
 
 
 
@@ -56,7 +57,7 @@ const routes: Routes = [
   {path:'add-sub-category',component:AddSubCategoryComponent},
   {path:'dailyreports',component:DailyreportsComponent},
 
-  {path:'viewcategories',component:ViewsubcategoriesComponent},
+  {path:'viewcategories',component:ViewcategoriesComponent},
  
   {path:'viewsubcategories',component:ViewsubcategoriesComponent}
 ]},

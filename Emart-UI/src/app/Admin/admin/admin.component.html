@@ -4,9 +4,10 @@
     <div class="topnav">
         
        
+      <a [routerLink]="['/logout']" (click)="Logout()" ><i class="fa fa-fw fa-user">Logout</i></a>
+        <a routerLink="viewcategories" ><i class="fa fa-eye " aria-hidden="true">&nbsp; View category </i></a>
+        <a routerLink="viewsubcategories" class="nav-link "><i class="fa fa-eye " aria-hidden="true">&nbsp; View Subcategory </i></a>
         <a routerLink="add-sub-category" class="nav-link "><i class="fa fa-list " aria-hidden="true">&nbsp;Add SubCategory </i></a>
-        <a routerLink="viewcategories" ><i class="fa fa-mobile " aria-hidden="true">&nbsp; View category </i></a>
-        <a routerLink="viewsubcategories" class="nav-link "><i class="fa fa-mobile " aria-hidden="true">&nbsp; View Subcategory </i></a>
         <a routerLink="add-category"><i class="fa fa-shopping-cart " aria-hidden="true">&nbsp;AddCategory</i></a>
         <a routerLink="/admin"><i class="fa fa-home " aria-hidden="true">&nbsp; Home</i></a>
         </div>

@@ -2,7 +2,7 @@
 
 .topnav {
   overflow: hidden;
-
+position: relative;
   padding: 2px 8px;
   width:100%;
 }
@@ -10,6 +10,7 @@
 .topnav a {
   float:right;
   display: block;
+  font-style: bold;
   color:rgb(155, 29, 48);
   text-align: center;
   padding: 10px 14px;
@@ -19,7 +20,7 @@
 
 .topnav a:hover {
   background-color:burlywood;
-  color: goldenrod;
+  color: rgb(207, 30, 83);
 }
 
 
@@ -175,7 +176,7 @@ span
 h4{
   text-align: CENTER;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #2196F3;
+  color:pink;
 }
 
 .b1{
@@ -183,6 +184,7 @@ h4{
  background-size: cover;
  height:620px;
  position:relative;
+ width:110%;
 
 }
 .round-shape {

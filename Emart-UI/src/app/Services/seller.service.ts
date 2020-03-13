@@ -45,7 +45,7 @@ public ViewItems():Observable<Items[]>
 }
 public UpdateItem(item:Items):Observable<any>
 {
-  return this.http.put<any>(this.url+'UpdateItem/',JSON.stringify(item),Requestheaders);
+  return this.http.put<any>(this.url+'UpdateItem',JSON.stringify(item),Requestheaders);
 }
 public GetItem(id:string) : Observable<Items>
 {

@@ -8,7 +8,7 @@ body {
 
 .topnav {
   overflow:hidden;
-  background-color: #e9e9e9;
+  background-color: #7d7b92;
 }
 
 .topnav a {
@@ -26,10 +26,10 @@ body {
   color: black;
 }
 
-.topnav a.active {
+/* .topnav a.active {
   background-color: #2196F3;
   color: white;
-}
+} */
 
 .topnav .search-container {
   float: right;
@@ -78,19 +78,19 @@ body {
     float: right;
 }
 
-.b1 {
+.b2 {
    
   
   background-attachment: fixed;
   background-size: cover; 
 
 
-  height:600px;
+  height:645px;
 
  position:relative;
 
- 
-  background-image:url("https://media.gettyimages.com/photos/small-business-owner-packing-clothes-in-the-box-at-workplace-asian-picture-id1035609340?s=2048x2048")
+ background-position: center;
+  background-image:url("src\assets\image\seller.jpg")
 } 
 
 

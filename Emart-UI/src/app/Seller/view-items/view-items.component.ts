@@ -18,7 +18,7 @@ export class ViewItemsComponent implements OnInit {
 //   categorylist:Category[];
 // subcategorylist:SubCategory[];
 //catid:string;
-  constructor(private fromBuilder:FormBuilder,private service: SellerService)
+  constructor(private fromBuilder:FormBuilder,private service: SellerService,private route:Router)
    {
     this.service.ViewItems().subscribe(res=>{
       this.itemlist=res;
@@ -104,7 +104,7 @@ GetItem(itemid:string)
               CategoryId:this.item.categoryId,
               SubcategoryId:this.item.subcategoryId,
               Remarks:this.item.remarks,
-              Image:this.item.image
+              // Image:this.item.image
               
             }
           )
@@ -118,27 +118,31 @@ GetItem(itemid:string)
     }
    
  
- Edit()
-  {
-        let item=new Items();
-    console.log(item);
-    
-
-
-    
-    item.itemId=this.itemForm.value["ItemId"];
-    item.categoryId=this.itemForm.value["CategoryId"];
-    item.sellerId=this.itemForm.value["SellerId"];
-    item.subcategoryId=this.itemForm.value["SubcategoryId"]
-    item.itemName=this.itemForm.value["ItemName"];
-   item.image=this.itemForm.value["image"];
-    item.price=this.itemForm.value["Price"];
-    item.stockNumber=this.itemForm.value["StockNumber"];
-     item.description=this.itemForm.value["Description"];
-    item.remarks=this.itemForm.value["Remarks"];
-this.service.UpdateItem(item).subscribe(res=>{console.log('Record updated')})
-    console.log(this.item);
-   }
+    Edit()
+    {
+      let item=new Items();
+      console.log(item);
+      
+      item.itemId=this.itemForm.value["ItemId"];
+      item.categoryId=this.itemForm.value["CategoryId"];
+      item.sellerId=this.itemForm.value["SellerId"];
+      item.subcategoryId=this.itemForm.value["SubcategoryId"]
+      item.itemName=this.itemForm.value["ItemName"];
+      // item.image=this.itemForm.value["image"];
+      item.price=this.itemForm.value["Price"];
+      item.stockNumber=this.itemForm.value["StockNumber"];
+       item.description=this.itemForm.value["Description"];
+      item.remarks=this.itemForm.value["Remarks"];
+    this.service.UpdateItem(item).subscribe(res=>
+    {
+      console.log('Record updated')
+      alert("Record Updated");
+      this.route.navigateByUrl('/seller/view-items');
+    })
+      console.log(this.item);
+     }
+  
+  
 
 //console.log(this.item);
 
