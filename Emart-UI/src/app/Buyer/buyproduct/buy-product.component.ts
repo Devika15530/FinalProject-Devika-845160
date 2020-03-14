@@ -24,7 +24,10 @@ export class BuyProductComponent implements OnInit {
     name:[''],
     dateTime:[''],
     numberOfItems:[''],
-    remarks:['']
+    remarks:[''],
+    itemName:[''],
+    image:[''],
+    price:['']
   })
   this.item=JSON.parse(localStorage.getItem('item'));
   console.log(this.item);
@@ -37,6 +40,9 @@ export class BuyProductComponent implements OnInit {
     this.pobj.transactionId=this.pobj.id;
     this.pobj.buyerId=localStorage.getItem('buyerId');
     this.pobj.sellerId=this.item.sellerId;
+    this.pobj.itemName=this.item.itemName;
+    this.pobj.price=this.item.price;
+    this.pobj.image=this.item.image;
     this.pobj.numberOfItems=this.buyerform.value["numberOfItems"];
     this.pobj.itemId=this.item.itemId;
     this.pobj.transactionType=this.buyerform.value["transactionType"]

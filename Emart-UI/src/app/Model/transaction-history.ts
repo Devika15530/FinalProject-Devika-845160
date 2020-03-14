@@ -1,6 +1,8 @@
 export class TransactionHistory {
 
-
+itemName:string;
+price:string;
+image:string;
     id:string;
     buyerId:string;
     sellerId:string;
